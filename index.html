@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Workshop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Pendaftaran Workshop</h1>
+        <p>Silakan isi formulir pendaftaran di bawah ini.</p>
+
+        <!-- FORM PENDAFTARAN -->
+        <section class="card">
+            <h2>Form Pendaftaran</h2>
+
+            <form id="formWorkshop" novalidate>
+
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" maxlength="40"
+                    placeholder="Masukkan nama lengkap">
+
+                <p class="info">Jumlah karakter: <span id="jumlahKarakter">0</span>/40</p>
+
+                <label for="email">Email</label>
+                <input type="email" id="email"
+                    placeholder="contoh@gmail.com">
+
+                <label for="sesi">Pilih Sesi Workshop</label>
+                <select id="sesi">
+                    <option value="">-- Pilih Sesi --</option>
+                    <option value="Pagi (09.00 - 12.00)">Pagi (09.00 - 12.00)</option>
+                    <option value="Siang (13.00 - 16.00)">Siang (13.00 - 16.00)</option>
+                    <option value="Malam (19.00 - 21.00)">Malam (19.00 - 21.00)</option>
+                </select>
+
+                <p id="infoSesi">Sesi belum dipilih.</p>
+
+                <div class="button-group">
+                    <button type="submit">Daftar Sekarang</button>
+                    <button type="reset" id="tombolReset">Reset</button>
+                </div>
+
+            </form>
+
+            <p id="pesanForm" aria-live="polite"></p>
+
+            <div id="ringkasan" class="ringkasan" hidden>
+                <h3>Ringkasan Pendaftaran</h3>
+                <p>Nama: <span id="hasilNama"></span></p>
+                <p>Email: <span id="hasilEmail"></span></p>
+                <p>Sesi: <span id="hasilSesi"></span></p>
+            </div>
+        </section>
+
+        <!-- TO-DO LIST -->
+        <section class="card">
+            <h2>Daftar Tugas</h2>
+
+            <label for="inputTugas">Tugas Baru</label>
+            <input type="text" id="inputTugas"
+                placeholder="Masukkan tugas">
+
+            <button type="button" id="tambahTugas">Tambah Tugas</button>
+
+            <p id="pesanTugas"></p>
+            <ul id="daftarTugas"></ul>
+        </section>
+
+        <!-- TAMPIL DAN SEMBUNYIKAN -->
+        <section class="card">
+            <h2>Eksperimen DOM</h2>
+
+            <p id="teksEksperimen">
+                Ini adalah paragraf yang bisa disembunyikan
+                dan ditampilkan menggunakan JavaScript.
+            </p>
+
+            <button type="button" id="tombolToggle">
+                Sembunyikan / Tampilkan
+            </button>
+        </section>
+
+    </div>
+
+</body>
+</html>

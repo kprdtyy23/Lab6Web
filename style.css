@@ -1,0 +1,128 @@
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #173f75;
+}
+
+h2 {
+    color: #173f75;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* FORM */
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.info {
+    font-size: 13px;
+    color: #687386;
+}
+
+button {
+    background-color: #3478c8;
+    color: white;
+    border: none;
+    padding: 11px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #173f75;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#tombolReset {
+    background-color: #687386;
+}
+
+#pesanForm {
+    font-weight: bold;
+}
+
+.error {
+    color: #d62828;
+}
+
+.sukses {
+    color: #16803c;
+}
+
+.ringkasan {
+    background-color: #e6f1ff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+/* TO-DO LIST */
+li {
+    margin-bottom: 10px;
+}
+
+.selesai span {
+    text-decoration: line-through;
+    color: #687386;
+}
+
+/* EKSPERIMEN */
+.sembunyi {
+    display: none;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
